@@ -1,0 +1,6 @@
+{"run_id": "run-2026-09-15-b1", "dimension": "EVAL-D02", "split": "held-out", "purpose": "baseline", "case_set_version": "tvr-heldout-v1", "commit": "3a7f0b1", "started": "2026-09-15T10:00:00Z"}
+{"run_id": "run-2026-09-15-b2", "dimension": "EVAL-D02", "split": "held-out", "purpose": "baseline", "case_set_version": "tvr-heldout-v1", "commit": "3a7f0b1", "started": "2026-09-15T10:07:00Z"}
+{"run_id": "run-2026-09-15-b3", "dimension": "EVAL-D02", "split": "held-out", "purpose": "baseline", "case_set_version": "tvr-heldout-v1", "commit": "3a7f0b1", "started": "2026-09-15T10:14:00Z"}
+{"run_id": "run-2026-09-16-1", "dimension": "EVAL-D02", "split": "held-out", "case_set_version": "tvr-heldout-v1", "commit": "9e1d2c4", "started": "2026-09-16T15:00:00Z"}
+{"run_id": "run-2026-09-16-2", "dimension": "EVAL-D02", "split": "held-out", "case_set_version": "tvr-heldout-v1", "commit": "9e1d2c4", "started": "2026-09-16T15:07:00Z"}
+{"run_id": "run-2026-09-16-3", "dimension": "EVAL-D02", "split": "held-out", "case_set_version": "tvr-heldout-v1", "commit": "9e1d2c4", "started": "2026-09-16T15:14:00Z"}

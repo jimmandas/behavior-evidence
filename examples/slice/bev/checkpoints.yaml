@@ -1,0 +1,10 @@
+- id: CP-0003
+  type: C3
+  obligation: ABS-B05
+  opened: 2026-09-16T15:10Z
+  needed: Error analysis on ~100 traces for clarifying-question quality
+  estimate_min: 45
+  blocks: []
+  status: open
+  closed: null
+  decision: null

@@ -1,0 +1,22 @@
+# eval-result-template.yaml — the fields the adapter can't compute. The harness fills it per verification;
+# <skill>/tools/judge_to_eval_result.py adds every number and the per-case records.
+
+obligation: ABS-B01
+dimension: EVAL-D01
+provenance: DISC-promoted           # DISC-promoted | spec-only | build-observed | production-derived
+stage: build                        # build | release | production — must match the manifest's
+split: held-out                     # verification runs on held-out cases only
+method: model                       # deterministic | model | human — must match 04 §4.2
+case_set: {version: <case-set-version>}
+versions:                           # what produced the result; commit pins it
+  model: <model id>
+  prompt: <prompt hash>
+  judge: <judge prompt hash>        # model-scored only
+  commit: <sha>
+baseline:                           # measurement pins: must equal the candidate's
+  case_set_version: <case-set-version>
+  method: model
+  judge: <judge prompt hash>
+evidence_state_before: red          # red | inconclusive | green-provisional | green | stale (never unmeasured)
+safety_critical: false              # true queues a human judgment review (C4)
+new_series: false                   # true on the first green after a case-set, method or judge change

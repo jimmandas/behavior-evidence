@@ -1,0 +1,46 @@
+# One vertical slice: an earned dimension (BEV row), a control (TDD only), and an obligation still waiting for failure data.
+# No evidence_state here: the slice gate derives it from the result.
+slice: TVR-SLICE-01
+stage: build
+commit: 9e1d2c4
+contract: 04-evaluation-spec.md
+ledger: runs.jsonl
+traces: traces.jsonl
+obligations:
+- requirement: ABS-B03
+  routing: both
+  tasks:
+  - plan-2026-09-16/task-3
+  - plan-2026-09-16/task-7
+  accepted: true
+  verification:
+    tdd:
+      required: true
+      refs:
+      - test_booking_tool_rejects_unknown_test_code
+      state: green
+    bev:
+      required: true
+      dimension: EVAL-D02
+      last_result: results/EVAL-D02.yaml
+- requirement: GOV-C01
+  routing: tdd
+  tasks:
+  - plan-2026-09-16/task-2
+  accepted: true
+  verification:
+    tdd:
+      required: true
+      refs:
+      - test_safety_test_requires_approval
+      state: green
+    bev:
+      required: false
+unmeasured:
+- requirement: ABS-B05
+  gap: GAP-02-02
+  tracing_task: plan-2026-09-16/task-5
+  error_analysis:
+    trigger: 100 traces or 2026-10-01
+    checkpoint: CP-0003
+  decision: null

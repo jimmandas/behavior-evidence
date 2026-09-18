@@ -1,0 +1,24 @@
+# The non-statistical fields, written by the harness before the adapter runs.
+# The adapter adds every number; the threshold comes from 04-evaluation-spec.md §4.2.
+obligation: ABS-B03
+dimension: EVAL-D02
+provenance: DISC-promoted
+stage: build
+split: held-out
+method: model
+case_set:
+  version: tvr-heldout-v1
+versions:
+  model: claude-haiku-4-5-20251001
+  prompt: sha256:5f1c
+  tools: t-4
+  control_policy: cp-1
+  judge: jp-v2
+  commit: 9e1d2c4
+baseline:
+  case_set_version: tvr-heldout-v1
+  method: model
+  judge: jp-v2
+unacceptable_failures: 0
+regressions: 0
+evidence_state_before: red

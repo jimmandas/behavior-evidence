@@ -1,0 +1,10 @@
+{
+  "name": "behavior-evidence",
+  "description": "Behavior evidence for agentic workflows: a peer to Superpowers TDD for probabilistic behavior. Obligations named up front, evaluators earned from observed failures, and deterministic gates that re-derive every behavioral claim from per-case, trace-linked evidence.",
+  "version": "0.15.0",
+  "author": {
+    "name": "Jim Mandas",
+    "email": "jim.mandas@gmail.com"
+  },
+  "keywords": ["evals", "behavior-evidence", "agents", "governance", "superpowers", "llm-judge"]
+}

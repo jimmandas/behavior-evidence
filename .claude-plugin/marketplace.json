@@ -1,0 +1,15 @@
+{
+  "name": "jimmandas",
+  "description": "Jim Mandas's Claude Code plugins",
+  "owner": {
+    "name": "Jim Mandas"
+  },
+  "plugins": [
+    {
+      "name": "behavior-evidence",
+      "description": "Behavior evidence for agentic workflows, a peer to Superpowers TDD",
+      "version": "0.15.0",
+      "source": "./"
+    }
+  ]
+}

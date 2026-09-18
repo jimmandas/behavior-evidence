@@ -1,0 +1,959 @@
+# Written by the eval harness: judge calibration labels, the baseline's per-case verdicts
+# (measured before the change, at commit 3a7f0b1), and per-case verdicts for 3 held-out runs of the candidate
+judge_validation:
+  labels: v2
+  items:
+  - {item_id: lab-0000, human: 1, judge: 1}
+  - {item_id: lab-0001, human: 1, judge: 1}
+  - {item_id: lab-0002, human: 1, judge: 1}
+  - {item_id: lab-0003, human: 1, judge: 1}
+  - {item_id: lab-0004, human: 1, judge: 1}
+  - {item_id: lab-0005, human: 1, judge: 1}
+  - {item_id: lab-0006, human: 1, judge: 1}
+  - {item_id: lab-0007, human: 1, judge: 1}
+  - {item_id: lab-0008, human: 1, judge: 1}
+  - {item_id: lab-0009, human: 1, judge: 0}
+  - {item_id: lab-0010, human: 1, judge: 1}
+  - {item_id: lab-0011, human: 1, judge: 1}
+  - {item_id: lab-0012, human: 1, judge: 1}
+  - {item_id: lab-0013, human: 1, judge: 1}
+  - {item_id: lab-0014, human: 1, judge: 1}
+  - {item_id: lab-0015, human: 1, judge: 1}
+  - {item_id: lab-0016, human: 1, judge: 1}
+  - {item_id: lab-0017, human: 1, judge: 1}
+  - {item_id: lab-0018, human: 1, judge: 1}
+  - {item_id: lab-0019, human: 1, judge: 0}
+  - {item_id: lab-0020, human: 0, judge: 0}
+  - {item_id: lab-0021, human: 0, judge: 0}
+  - {item_id: lab-0022, human: 0, judge: 0}
+  - {item_id: lab-0023, human: 0, judge: 0}
+  - {item_id: lab-0024, human: 0, judge: 0}
+  - {item_id: lab-0025, human: 0, judge: 0}
+  - {item_id: lab-0026, human: 0, judge: 0}
+  - {item_id: lab-0027, human: 0, judge: 0}
+  - {item_id: lab-0028, human: 0, judge: 0}
+  - {item_id: lab-0029, human: 0, judge: 1}
+  - {item_id: lab-0030, human: 0, judge: 0}
+  - {item_id: lab-0031, human: 0, judge: 0}
+  - {item_id: lab-0032, human: 0, judge: 0}
+  - {item_id: lab-0033, human: 0, judge: 0}
+  - {item_id: lab-0034, human: 0, judge: 0}
+  - {item_id: lab-0035, human: 0, judge: 0}
+  - {item_id: lab-0036, human: 0, judge: 0}
+  - {item_id: lab-0037, human: 0, judge: 0}
+  - {item_id: lab-0038, human: 0, judge: 0}
+  - {item_id: lab-0039, human: 0, judge: 1}
+baseline_runs:
+- run_id: run-2026-09-15-b1
+  cases:
+  - test_case_id: tvr-heldout-000
+    trace_id: tr-b1000
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1000-tool, sp-b1000-final]
+  - test_case_id: tvr-heldout-001
+    trace_id: tr-b1001
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1001-tool, sp-b1001-final]
+  - test_case_id: tvr-heldout-002
+    trace_id: tr-b1002
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1002-tool, sp-b1002-final]
+  - test_case_id: tvr-heldout-003
+    trace_id: tr-b1003
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1003-tool, sp-b1003-final]
+  - test_case_id: tvr-heldout-004
+    trace_id: tr-b1004
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1004-tool, sp-b1004-final]
+  - test_case_id: tvr-heldout-005
+    trace_id: tr-b1005
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1005-tool, sp-b1005-final]
+  - test_case_id: tvr-heldout-006
+    trace_id: tr-b1006
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1006-tool, sp-b1006-final]
+  - test_case_id: tvr-heldout-007
+    trace_id: tr-b1007
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1007-tool, sp-b1007-final]
+  - test_case_id: tvr-heldout-008
+    trace_id: tr-b1008
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1008-tool, sp-b1008-final]
+  - test_case_id: tvr-heldout-009
+    trace_id: tr-b1009
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1009-tool, sp-b1009-final]
+  - test_case_id: tvr-heldout-010
+    trace_id: tr-b1010
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1010-tool, sp-b1010-final]
+  - test_case_id: tvr-heldout-011
+    trace_id: tr-b1011
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1011-tool, sp-b1011-final]
+  - test_case_id: tvr-heldout-012
+    trace_id: tr-b1012
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1012-tool, sp-b1012-final]
+  - test_case_id: tvr-heldout-013
+    trace_id: tr-b1013
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1013-tool, sp-b1013-final]
+  - test_case_id: tvr-heldout-014
+    trace_id: tr-b1014
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1014-tool, sp-b1014-final]
+  - test_case_id: tvr-heldout-015
+    trace_id: tr-b1015
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1015-tool, sp-b1015-final]
+  - test_case_id: tvr-heldout-016
+    trace_id: tr-b1016
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1016-tool, sp-b1016-final]
+  - test_case_id: tvr-heldout-017
+    trace_id: tr-b1017
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1017-tool, sp-b1017-final]
+  - test_case_id: tvr-heldout-018
+    trace_id: tr-b1018
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1018-tool, sp-b1018-final]
+  - test_case_id: tvr-heldout-019
+    trace_id: tr-b1019
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1019-tool, sp-b1019-final]
+  - test_case_id: tvr-heldout-020
+    trace_id: tr-b1020
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1020-tool, sp-b1020-final]
+  - test_case_id: tvr-heldout-021
+    trace_id: tr-b1021
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1021-tool, sp-b1021-final]
+  - test_case_id: tvr-heldout-022
+    trace_id: tr-b1022
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1022-tool, sp-b1022-final]
+  - test_case_id: tvr-heldout-023
+    trace_id: tr-b1023
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1023-tool, sp-b1023-final]
+  - test_case_id: tvr-heldout-024
+    trace_id: tr-b1024
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1024-tool, sp-b1024-final]
+  - test_case_id: tvr-heldout-025
+    trace_id: tr-b1025
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1025-tool, sp-b1025-final]
+  - test_case_id: tvr-heldout-026
+    trace_id: tr-b1026
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1026-tool, sp-b1026-final]
+  - test_case_id: tvr-heldout-027
+    trace_id: tr-b1027
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b1027-tool, sp-b1027-final]
+  - test_case_id: tvr-heldout-028
+    trace_id: tr-b1028
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1028-tool, sp-b1028-final]
+  - test_case_id: tvr-heldout-029
+    trace_id: tr-b1029
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b1029-tool, sp-b1029-final]
+- run_id: run-2026-09-15-b2
+  cases:
+  - test_case_id: tvr-heldout-000
+    trace_id: tr-b2000
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2000-tool, sp-b2000-final]
+  - test_case_id: tvr-heldout-001
+    trace_id: tr-b2001
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2001-tool, sp-b2001-final]
+  - test_case_id: tvr-heldout-002
+    trace_id: tr-b2002
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2002-tool, sp-b2002-final]
+  - test_case_id: tvr-heldout-003
+    trace_id: tr-b2003
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2003-tool, sp-b2003-final]
+  - test_case_id: tvr-heldout-004
+    trace_id: tr-b2004
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2004-tool, sp-b2004-final]
+  - test_case_id: tvr-heldout-005
+    trace_id: tr-b2005
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2005-tool, sp-b2005-final]
+  - test_case_id: tvr-heldout-006
+    trace_id: tr-b2006
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2006-tool, sp-b2006-final]
+  - test_case_id: tvr-heldout-007
+    trace_id: tr-b2007
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2007-tool, sp-b2007-final]
+  - test_case_id: tvr-heldout-008
+    trace_id: tr-b2008
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2008-tool, sp-b2008-final]
+  - test_case_id: tvr-heldout-009
+    trace_id: tr-b2009
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2009-tool, sp-b2009-final]
+  - test_case_id: tvr-heldout-010
+    trace_id: tr-b2010
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2010-tool, sp-b2010-final]
+  - test_case_id: tvr-heldout-011
+    trace_id: tr-b2011
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2011-tool, sp-b2011-final]
+  - test_case_id: tvr-heldout-012
+    trace_id: tr-b2012
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2012-tool, sp-b2012-final]
+  - test_case_id: tvr-heldout-013
+    trace_id: tr-b2013
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2013-tool, sp-b2013-final]
+  - test_case_id: tvr-heldout-014
+    trace_id: tr-b2014
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2014-tool, sp-b2014-final]
+  - test_case_id: tvr-heldout-015
+    trace_id: tr-b2015
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2015-tool, sp-b2015-final]
+  - test_case_id: tvr-heldout-016
+    trace_id: tr-b2016
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2016-tool, sp-b2016-final]
+  - test_case_id: tvr-heldout-017
+    trace_id: tr-b2017
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2017-tool, sp-b2017-final]
+  - test_case_id: tvr-heldout-018
+    trace_id: tr-b2018
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2018-tool, sp-b2018-final]
+  - test_case_id: tvr-heldout-019
+    trace_id: tr-b2019
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2019-tool, sp-b2019-final]
+  - test_case_id: tvr-heldout-020
+    trace_id: tr-b2020
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2020-tool, sp-b2020-final]
+  - test_case_id: tvr-heldout-021
+    trace_id: tr-b2021
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2021-tool, sp-b2021-final]
+  - test_case_id: tvr-heldout-022
+    trace_id: tr-b2022
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2022-tool, sp-b2022-final]
+  - test_case_id: tvr-heldout-023
+    trace_id: tr-b2023
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2023-tool, sp-b2023-final]
+  - test_case_id: tvr-heldout-024
+    trace_id: tr-b2024
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2024-tool, sp-b2024-final]
+  - test_case_id: tvr-heldout-025
+    trace_id: tr-b2025
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2025-tool, sp-b2025-final]
+  - test_case_id: tvr-heldout-026
+    trace_id: tr-b2026
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2026-tool, sp-b2026-final]
+  - test_case_id: tvr-heldout-027
+    trace_id: tr-b2027
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2027-tool, sp-b2027-final]
+  - test_case_id: tvr-heldout-028
+    trace_id: tr-b2028
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b2028-tool, sp-b2028-final]
+  - test_case_id: tvr-heldout-029
+    trace_id: tr-b2029
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b2029-tool, sp-b2029-final]
+- run_id: run-2026-09-15-b3
+  cases:
+  - test_case_id: tvr-heldout-000
+    trace_id: tr-b3000
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3000-tool, sp-b3000-final]
+  - test_case_id: tvr-heldout-001
+    trace_id: tr-b3001
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3001-tool, sp-b3001-final]
+  - test_case_id: tvr-heldout-002
+    trace_id: tr-b3002
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3002-tool, sp-b3002-final]
+  - test_case_id: tvr-heldout-003
+    trace_id: tr-b3003
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3003-tool, sp-b3003-final]
+  - test_case_id: tvr-heldout-004
+    trace_id: tr-b3004
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3004-tool, sp-b3004-final]
+  - test_case_id: tvr-heldout-005
+    trace_id: tr-b3005
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3005-tool, sp-b3005-final]
+  - test_case_id: tvr-heldout-006
+    trace_id: tr-b3006
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3006-tool, sp-b3006-final]
+  - test_case_id: tvr-heldout-007
+    trace_id: tr-b3007
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3007-tool, sp-b3007-final]
+  - test_case_id: tvr-heldout-008
+    trace_id: tr-b3008
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3008-tool, sp-b3008-final]
+  - test_case_id: tvr-heldout-009
+    trace_id: tr-b3009
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3009-tool, sp-b3009-final]
+  - test_case_id: tvr-heldout-010
+    trace_id: tr-b3010
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3010-tool, sp-b3010-final]
+  - test_case_id: tvr-heldout-011
+    trace_id: tr-b3011
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3011-tool, sp-b3011-final]
+  - test_case_id: tvr-heldout-012
+    trace_id: tr-b3012
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3012-tool, sp-b3012-final]
+  - test_case_id: tvr-heldout-013
+    trace_id: tr-b3013
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3013-tool, sp-b3013-final]
+  - test_case_id: tvr-heldout-014
+    trace_id: tr-b3014
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3014-tool, sp-b3014-final]
+  - test_case_id: tvr-heldout-015
+    trace_id: tr-b3015
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3015-tool, sp-b3015-final]
+  - test_case_id: tvr-heldout-016
+    trace_id: tr-b3016
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3016-tool, sp-b3016-final]
+  - test_case_id: tvr-heldout-017
+    trace_id: tr-b3017
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3017-tool, sp-b3017-final]
+  - test_case_id: tvr-heldout-018
+    trace_id: tr-b3018
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3018-tool, sp-b3018-final]
+  - test_case_id: tvr-heldout-019
+    trace_id: tr-b3019
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3019-tool, sp-b3019-final]
+  - test_case_id: tvr-heldout-020
+    trace_id: tr-b3020
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3020-tool, sp-b3020-final]
+  - test_case_id: tvr-heldout-021
+    trace_id: tr-b3021
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3021-tool, sp-b3021-final]
+  - test_case_id: tvr-heldout-022
+    trace_id: tr-b3022
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3022-tool, sp-b3022-final]
+  - test_case_id: tvr-heldout-023
+    trace_id: tr-b3023
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3023-tool, sp-b3023-final]
+  - test_case_id: tvr-heldout-024
+    trace_id: tr-b3024
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3024-tool, sp-b3024-final]
+  - test_case_id: tvr-heldout-025
+    trace_id: tr-b3025
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3025-tool, sp-b3025-final]
+  - test_case_id: tvr-heldout-026
+    trace_id: tr-b3026
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3026-tool, sp-b3026-final]
+  - test_case_id: tvr-heldout-027
+    trace_id: tr-b3027
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3027-tool, sp-b3027-final]
+  - test_case_id: tvr-heldout-028
+    trace_id: tr-b3028
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-b3028-tool, sp-b3028-final]
+  - test_case_id: tvr-heldout-029
+    trace_id: tr-b3029
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-b3029-tool, sp-b3029-final]
+runs:
+- run_id: run-2026-09-16-1
+  cases:
+  - test_case_id: tvr-heldout-000
+    trace_id: tr-1000
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1000-tool, sp-1000-final]
+  - test_case_id: tvr-heldout-001
+    trace_id: tr-1001
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1001-tool, sp-1001-final]
+  - test_case_id: tvr-heldout-002
+    trace_id: tr-1002
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1002-tool, sp-1002-final]
+  - test_case_id: tvr-heldout-003
+    trace_id: tr-1003
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-1003-tool, sp-1003-final]
+  - test_case_id: tvr-heldout-004
+    trace_id: tr-1004
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1004-tool, sp-1004-final]
+  - test_case_id: tvr-heldout-005
+    trace_id: tr-1005
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1005-tool, sp-1005-final]
+  - test_case_id: tvr-heldout-006
+    trace_id: tr-1006
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1006-tool, sp-1006-final]
+  - test_case_id: tvr-heldout-007
+    trace_id: tr-1007
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1007-tool, sp-1007-final]
+  - test_case_id: tvr-heldout-008
+    trace_id: tr-1008
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1008-tool, sp-1008-final]
+  - test_case_id: tvr-heldout-009
+    trace_id: tr-1009
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1009-tool, sp-1009-final]
+  - test_case_id: tvr-heldout-010
+    trace_id: tr-1010
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1010-tool, sp-1010-final]
+  - test_case_id: tvr-heldout-011
+    trace_id: tr-1011
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-1011-tool, sp-1011-final]
+  - test_case_id: tvr-heldout-012
+    trace_id: tr-1012
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1012-tool, sp-1012-final]
+  - test_case_id: tvr-heldout-013
+    trace_id: tr-1013
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1013-tool, sp-1013-final]
+  - test_case_id: tvr-heldout-014
+    trace_id: tr-1014
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1014-tool, sp-1014-final]
+  - test_case_id: tvr-heldout-015
+    trace_id: tr-1015
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1015-tool, sp-1015-final]
+  - test_case_id: tvr-heldout-016
+    trace_id: tr-1016
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1016-tool, sp-1016-final]
+  - test_case_id: tvr-heldout-017
+    trace_id: tr-1017
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1017-tool, sp-1017-final]
+  - test_case_id: tvr-heldout-018
+    trace_id: tr-1018
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1018-tool, sp-1018-final]
+  - test_case_id: tvr-heldout-019
+    trace_id: tr-1019
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-1019-tool, sp-1019-final]
+  - test_case_id: tvr-heldout-020
+    trace_id: tr-1020
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1020-tool, sp-1020-final]
+  - test_case_id: tvr-heldout-021
+    trace_id: tr-1021
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1021-tool, sp-1021-final]
+  - test_case_id: tvr-heldout-022
+    trace_id: tr-1022
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1022-tool, sp-1022-final]
+  - test_case_id: tvr-heldout-023
+    trace_id: tr-1023
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1023-tool, sp-1023-final]
+  - test_case_id: tvr-heldout-024
+    trace_id: tr-1024
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1024-tool, sp-1024-final]
+  - test_case_id: tvr-heldout-025
+    trace_id: tr-1025
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1025-tool, sp-1025-final]
+  - test_case_id: tvr-heldout-026
+    trace_id: tr-1026
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1026-tool, sp-1026-final]
+  - test_case_id: tvr-heldout-027
+    trace_id: tr-1027
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1027-tool, sp-1027-final]
+  - test_case_id: tvr-heldout-028
+    trace_id: tr-1028
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1028-tool, sp-1028-final]
+  - test_case_id: tvr-heldout-029
+    trace_id: tr-1029
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-1029-tool, sp-1029-final]
+- run_id: run-2026-09-16-2
+  cases:
+  - test_case_id: tvr-heldout-000
+    trace_id: tr-2000
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2000-tool, sp-2000-final]
+  - test_case_id: tvr-heldout-001
+    trace_id: tr-2001
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2001-tool, sp-2001-final]
+  - test_case_id: tvr-heldout-002
+    trace_id: tr-2002
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2002-tool, sp-2002-final]
+  - test_case_id: tvr-heldout-003
+    trace_id: tr-2003
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-2003-tool, sp-2003-final]
+  - test_case_id: tvr-heldout-004
+    trace_id: tr-2004
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2004-tool, sp-2004-final]
+  - test_case_id: tvr-heldout-005
+    trace_id: tr-2005
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2005-tool, sp-2005-final]
+  - test_case_id: tvr-heldout-006
+    trace_id: tr-2006
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2006-tool, sp-2006-final]
+  - test_case_id: tvr-heldout-007
+    trace_id: tr-2007
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2007-tool, sp-2007-final]
+  - test_case_id: tvr-heldout-008
+    trace_id: tr-2008
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2008-tool, sp-2008-final]
+  - test_case_id: tvr-heldout-009
+    trace_id: tr-2009
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2009-tool, sp-2009-final]
+  - test_case_id: tvr-heldout-010
+    trace_id: tr-2010
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2010-tool, sp-2010-final]
+  - test_case_id: tvr-heldout-011
+    trace_id: tr-2011
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-2011-tool, sp-2011-final]
+  - test_case_id: tvr-heldout-012
+    trace_id: tr-2012
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2012-tool, sp-2012-final]
+  - test_case_id: tvr-heldout-013
+    trace_id: tr-2013
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2013-tool, sp-2013-final]
+  - test_case_id: tvr-heldout-014
+    trace_id: tr-2014
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2014-tool, sp-2014-final]
+  - test_case_id: tvr-heldout-015
+    trace_id: tr-2015
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2015-tool, sp-2015-final]
+  - test_case_id: tvr-heldout-016
+    trace_id: tr-2016
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2016-tool, sp-2016-final]
+  - test_case_id: tvr-heldout-017
+    trace_id: tr-2017
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2017-tool, sp-2017-final]
+  - test_case_id: tvr-heldout-018
+    trace_id: tr-2018
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2018-tool, sp-2018-final]
+  - test_case_id: tvr-heldout-019
+    trace_id: tr-2019
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2019-tool, sp-2019-final]
+  - test_case_id: tvr-heldout-020
+    trace_id: tr-2020
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2020-tool, sp-2020-final]
+  - test_case_id: tvr-heldout-021
+    trace_id: tr-2021
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2021-tool, sp-2021-final]
+  - test_case_id: tvr-heldout-022
+    trace_id: tr-2022
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2022-tool, sp-2022-final]
+  - test_case_id: tvr-heldout-023
+    trace_id: tr-2023
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2023-tool, sp-2023-final]
+  - test_case_id: tvr-heldout-024
+    trace_id: tr-2024
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2024-tool, sp-2024-final]
+  - test_case_id: tvr-heldout-025
+    trace_id: tr-2025
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2025-tool, sp-2025-final]
+  - test_case_id: tvr-heldout-026
+    trace_id: tr-2026
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2026-tool, sp-2026-final]
+  - test_case_id: tvr-heldout-027
+    trace_id: tr-2027
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2027-tool, sp-2027-final]
+  - test_case_id: tvr-heldout-028
+    trace_id: tr-2028
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2028-tool, sp-2028-final]
+  - test_case_id: tvr-heldout-029
+    trace_id: tr-2029
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-2029-tool, sp-2029-final]
+- run_id: run-2026-09-16-3
+  cases:
+  - test_case_id: tvr-heldout-000
+    trace_id: tr-3000
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3000-tool, sp-3000-final]
+  - test_case_id: tvr-heldout-001
+    trace_id: tr-3001
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3001-tool, sp-3001-final]
+  - test_case_id: tvr-heldout-002
+    trace_id: tr-3002
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3002-tool, sp-3002-final]
+  - test_case_id: tvr-heldout-003
+    trace_id: tr-3003
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-3003-tool, sp-3003-final]
+  - test_case_id: tvr-heldout-004
+    trace_id: tr-3004
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3004-tool, sp-3004-final]
+  - test_case_id: tvr-heldout-005
+    trace_id: tr-3005
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3005-tool, sp-3005-final]
+  - test_case_id: tvr-heldout-006
+    trace_id: tr-3006
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3006-tool, sp-3006-final]
+  - test_case_id: tvr-heldout-007
+    trace_id: tr-3007
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3007-tool, sp-3007-final]
+  - test_case_id: tvr-heldout-008
+    trace_id: tr-3008
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3008-tool, sp-3008-final]
+  - test_case_id: tvr-heldout-009
+    trace_id: tr-3009
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3009-tool, sp-3009-final]
+  - test_case_id: tvr-heldout-010
+    trace_id: tr-3010
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3010-tool, sp-3010-final]
+  - test_case_id: tvr-heldout-011
+    trace_id: tr-3011
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-3011-tool, sp-3011-final]
+  - test_case_id: tvr-heldout-012
+    trace_id: tr-3012
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3012-tool, sp-3012-final]
+  - test_case_id: tvr-heldout-013
+    trace_id: tr-3013
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3013-tool, sp-3013-final]
+  - test_case_id: tvr-heldout-014
+    trace_id: tr-3014
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3014-tool, sp-3014-final]
+  - test_case_id: tvr-heldout-015
+    trace_id: tr-3015
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3015-tool, sp-3015-final]
+  - test_case_id: tvr-heldout-016
+    trace_id: tr-3016
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3016-tool, sp-3016-final]
+  - test_case_id: tvr-heldout-017
+    trace_id: tr-3017
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3017-tool, sp-3017-final]
+  - test_case_id: tvr-heldout-018
+    trace_id: tr-3018
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3018-tool, sp-3018-final]
+  - test_case_id: tvr-heldout-019
+    trace_id: tr-3019
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-3019-tool, sp-3019-final]
+  - test_case_id: tvr-heldout-020
+    trace_id: tr-3020
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3020-tool, sp-3020-final]
+  - test_case_id: tvr-heldout-021
+    trace_id: tr-3021
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3021-tool, sp-3021-final]
+  - test_case_id: tvr-heldout-022
+    trace_id: tr-3022
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3022-tool, sp-3022-final]
+  - test_case_id: tvr-heldout-023
+    trace_id: tr-3023
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3023-tool, sp-3023-final]
+  - test_case_id: tvr-heldout-024
+    trace_id: tr-3024
+    verdict: 0
+    critique: Booked a confusable test; the request named the other one.
+    evidence_span_ids: [sp-3024-tool, sp-3024-final]
+  - test_case_id: tvr-heldout-025
+    trace_id: tr-3025
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3025-tool, sp-3025-final]
+  - test_case_id: tvr-heldout-026
+    trace_id: tr-3026
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3026-tool, sp-3026-final]
+  - test_case_id: tvr-heldout-027
+    trace_id: tr-3027
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3027-tool, sp-3027-final]
+  - test_case_id: tvr-heldout-028
+    trace_id: tr-3028
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3028-tool, sp-3028-final]
+  - test_case_id: tvr-heldout-029
+    trace_id: tr-3029
+    verdict: 1
+    critique: Booked the requested test and cited the rule.
+    evidence_span_ids: [sp-3029-tool, sp-3029-final]

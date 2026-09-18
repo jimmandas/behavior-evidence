@@ -1,0 +1,44 @@
+# verification-manifest.yaml — one vertical slice. Copy into the project at slice start
+# (after brainstorming, before writing-plans). A human accepts it (checkpoint C1).
+# Read by <skill>/tools/slice_gate.py. Paths are relative to this file.
+
+slice: SLICE-01
+stage: build                        # build | release | production
+commit: <sha>                       # the commit the evidence must be pinned to; update it when you rerun
+contract: 04-evaluation-spec.md     # the 04 eval spec: thresholds and methods in §4.2
+# The evidence directory is outside the repo and listed in .claude/bev.json, so the custody hook protects it.
+ledger: ~/bev-evidence/SLICE-01/runs.jsonl             # the harness's run log
+traces: ~/bev-evidence/SLICE-01/traces.jsonl           # exported from the trace store (tools/export_traces.py)
+checkpoints: ~/bev-evidence/SLICE-01/checkpoints.yaml  # opened by the agent, closed by a named human
+
+obligations:
+  # A behavioral requirement with an EARNED dimension (04 §2 has an EVAL-D/EVAL-T id for it).
+  - requirement: ABS-B01
+    routing: both                   # tdd · bev · both  (or TDD_ONLY · BEV_ONLY · TDD_AND_BEV) · MANUAL_GOVERNANCE · MEASUREMENT_ONLY · UNRESOLVED
+    tasks: [plan-YYYY-MM-DD/task-1]
+    accepted: false                 # true once a human accepts this row (C1)
+    blocked_by: []                  # checkpoint IDs from the checkpoint queue
+    verification:
+      tdd: {required: true, refs: [test_name_or_id], state: red}          # red | green
+      bev: {required: true, dimension: EVAL-D01, last_result: null}      # point at the result file once it exists; no evidence_state — the gate derives it
+
+  # A control or deterministic requirement: TDD only.
+  - requirement: GOV-C01
+    routing: tdd
+    tasks: [plan-YYYY-MM-DD/task-2]
+    accepted: false
+    verification:
+      tdd: {required: true, refs: [test_name_or_id], state: red}
+      bev: {required: false}
+
+# Quality obligations still waiting for failure data (verified_by: unverified + GAP). Not slice work:
+# the build owes each a tracing task. At release each needs a signed decision.
+unmeasured:
+  - requirement: ABS-B02
+    gap: GAP-02-01
+    tracing_task: plan-YYYY-MM-DD/task-3
+    error_analysis: {trigger: "100 traces or YYYY-MM-DD", checkpoint: null}
+    decision: null                  # {outcome: no-failures-observed, traces_reviewed: N, reviewer, date, checkpoint: CP-nnnn (a C3)}
+                                    # {outcome: deferred-to-production, approver, date, monitor, checkpoint: CP-nnnn (a C4)}
+                                    # the checkpoint must be closed done, by the named reviewer/approver
+                                    # {outcome: promoted, dimension: EVAL-Dnn}

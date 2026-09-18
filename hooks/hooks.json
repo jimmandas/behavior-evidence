@@ -1,0 +1,17 @@
+{
+  "description": "behavior-evidence custody: the coding agent may not rewrite the run ledger, records, traces or checkpoint queue it is judged on. Dormant in projects without .claude/bev.json.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/protect_evidence.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
