@@ -6,5 +6,6 @@
     "name": "Jim Mandas",
     "email": "jim.mandas@gmail.com"
   },
+  "license": "MIT",
   "keywords": ["evals", "behavior-evidence", "agents", "governance", "superpowers", "llm-judge"]
 }
